@@ -9,9 +9,11 @@ class Solution {
   
   public static String reverseWordsUtil(String input) {
     String[] words = input.split(" ");
+    // case where we have only spaces as the input String
     if(words.length == 0) {
       return input;
     }
+    //else initialise an empty string and we can add the words 
     String res = "";
     for(int i = words.length-1; i >= 0; i--) {
       res += words[i]+" ";
